@@ -72,6 +72,7 @@ answer question 5
 ## 6. Analysis of Results
 
 answer question 6
+
 6.1) The fastest is AtomicLong. The slowest is Using ReentrantLock.
 
 6.2) I think use ReentrantLock is great for another solution because this solution will work only one thread and when it finishes it will unlock and it calls thread that the longest wait to run.
