@@ -17,4 +17,5 @@ public class Counter {
 	 * Get the total value of counter.
 	 */
 	public long get() { return total; }
+	
 }
