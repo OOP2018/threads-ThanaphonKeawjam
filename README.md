@@ -74,11 +74,8 @@ answer question 5
 answer question 6
 6.1) The fastest is AtomicLong. The slowest is Using ReentrantLock.
 
-6.2) I think use ReentrantLock is great for another solution because this solution will work only one thread and when it finishes it will unlock and 
-	 it calls thread that the longest wait to run.
-	 
-	 For example a banking application if account have 100 Baht when the customer withdraw at the same time but 
-	 different application. The thread 1 withdraw 100 Baht at first, in account have 0 Baht. If the customer withdraw same money and same time but different 
+6.2) I think use ReentrantLock is great for another solution because this solution will work only one thread and when it finishes it will unlock and it calls thread that the longest wait to run.
+	 For example a banking application if account have 100 Baht when the customer withdraw at the same time but different application. The thread 1 withdraw 100 Baht at first, in account have 0 Baht. If the customer withdraw same money and same time but different 
 	 application, it can't withdraw.
 
 ## 7. Using Many Threads (optional)
