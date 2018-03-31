@@ -75,8 +75,6 @@ answer question 6
 
 6.1) The fastest is AtomicLong. The slowest is Using ReentrantLock.
 
-6.2) I think use ReentrantLock is great for another solution because this solution will work only one thread and when it finishes it will unlock and it calls thread that the longest wait to run.
-	 For example a banking application if account have 100 Baht when the customer withdraw at the same time but different application. The thread 1 withdraw 100 Baht at first, in account have 0 Baht. If the customer withdraw same money and same time but different 
-	 application, it can't withdraw.
+6.2) I think we should use ReetrantLock because it’s safer than other ways. This solution works same Syncronized method, but ReetrantLock will give thread that wait longest works first when previous thread finished which it’s fair unlike Syncronized method that will scramble work. For example we have 3 lists, and A = [1, 2, 3], B = [1, 2, 3, 4], C = [1, 2]. The program will select first list and lock when it finishes, so it will unlock current list and let other lists works sort by wait longest. 
 
 ## 7. Using Many Threads (optional)
